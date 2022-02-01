@@ -27,7 +27,7 @@
         </form>
     </div>
     <div class="order">
-        <form:form  modelAttribute="order" action="/order">
+        <form:form  modelAttribute="order" action="/order" method="post">
         <div class="form-row">
             <div class="form-group col-md-6">
                 <form:label path="pizzaName">Pizza</form:label>
@@ -58,8 +58,8 @@
             <form:label path="note">Note</form:label>
             <form:textarea type="text" class="form-control" path="note" placeholder="With peperoni, patate, tomate"/>
         </div>
-            <br>
-        <button type="submit" class="btn btn-danger">Order Pizza</button>
+            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+            <button type="submit" class="btn btn-danger">Order Pizza</button>
         </form:form>
 
     </div>
