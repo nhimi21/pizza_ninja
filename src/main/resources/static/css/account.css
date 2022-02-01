@@ -1,0 +1,94 @@
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+body{
+    background-color: #e7e5e4;
+}
+.nav{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    background-image: url("../img/pica4.jpg");
+    display: inline-flex;
+    justify-content:space-around;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+.nav ul li{
+    list-style:none;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+}
+.nav ul li a:hover{
+    border-bottom: 2px solid white;
+}
+.nav h1{
+    color: orangered;
+    font-family: "Brush Script MT", serif;
+    font-size: 50px;
+}
+.nav h1 span{
+    color: white;
+}
+.nav .logout{
+    border-radius: 3px;
+    color: black;
+    border: 1px solid white;
+}
+.box-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-register-1{
+    width: 395px;
+    height: auto;
+    padding: 10px;
+}
+.box-register-1 h1{
+    text-align: center;
+    color: orangered;
+    font-size: 40px;
+    font-family: "Brush Script MT", serif;
+}
+.box-register-1 p{
+    color: red;
+    text-align: center;
+}
+.box-register-1 table{
+    margin-left: 5px;
+}
+.box-register-1 table .form-control{
+    border: 1px solid orangered;
+    margin: 3px;
+    background: transparent;
+}
+.box-register-1 table label{
+    font-weight: bold;
+    font-size: 15px;
+    color: orangered;
+}
+.box-register-1 .btn {
+    border-radius: 18px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid orangered;
+    font-size: 18px;
+    font-weight: 700;
+    color: orangered;
+    margin-top: 5px;
+}
+.box-register-1 .btn:hover{
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid #21731c;
+    color: #21731c;
+}
