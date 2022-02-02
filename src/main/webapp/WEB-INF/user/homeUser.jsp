@@ -26,13 +26,51 @@
         </form>
     </div>
     <div class="hed">
-        <h1>Welcome back <c:out value="${currentUser.firstName}"/> <c:out value="${currentUser.lastName}"/>!</h1>
-        <p>You say I am hungry, I say order pizza</p>
+        <h1>Welcome to Pizza~Ninja  <c:out value="${currentUser.lastName}"/>!</h1>
     </div>
-    <div class="img-box col-4">
-        <img src="${pageContext.request.contextPath}/img/pica6.jpg" alt="pica1" width="400" height="300">
-        <img src="${pageContext.request.contextPath}/img/pica5.jpg" alt="pica5" width="400" height="300">
-        <img src="${pageContext.request.contextPath}/img/pica3.jpg" alt="pica3" width="400" height="300">
+    <hr>
+    <div class="img-box">
+        <div class="box-cont">
+            <h2>Pizza Pepperoni</h2>
+            <img src="${pageContext.request.contextPath}/img/pica6.jpg" alt="pica1" width="400" height="300">
+            <span>Price: 5$</span>
+            <button class="btn btn-danger"><a href="/order" style="text-decoration: none; color: white; font-weight: bold">Order Now</a></button>
+        </div>
+        <div class="box-cont">
+            <h2>Pizza Supreme</h2>
+            <img src="${pageContext.request.contextPath}/img/pica5.jpg" alt="pica5" width="400" height="300">
+            <span>Price: 7$</span>
+            <button class="btn btn-danger"><a href="/order" style="text-decoration: none; color: white; font-weight: bold">Order Now</a></button>
+        </div>
+       <div class="box-cont">
+           <h2>Pizza Pizza Hawaiian</h2>
+           <img src="${pageContext.request.contextPath}/img/pica3.jpg" alt="pica3" width="400" height="300">
+           <span>Price: 10$</span>
+           <button class="btn btn-danger"><a href="/order" style="text-decoration: none; color: white; font-weight: bold">Order Now</a></button>
+       </div>
+
+    </div>
+    <hr>
+    <div class="img-box">
+        <div class="box-cont">
+            <h2>Pizza Sausage & Kale</h2>
+            <img src="${pageContext.request.contextPath}/img/pica1.jpg" alt="pica1" width="400" height="300">
+            <span>Price: 4$</span>
+            <button class="btn btn-danger"><a href="/order" style="text-decoration: none; color: white; font-weight: bold">Order Now</a></button>
+        </div>
+        <div class="box-cont">
+            <h2>Pizza Capricious</h2>
+            <img src="${pageContext.request.contextPath}/img/pica8.jpg" alt="pica5" width="400" height="300">
+            <span>Price: 8$</span>
+            <button class="btn btn-danger"><a href="/order" style="text-decoration: none; color: white; font-weight: bold">Order Now</a></button>
+        </div >
+        <div class="box-cont">
+            <h2>Pizza Margherita</h2>
+            <img src="${pageContext.request.contextPath}/img/pica4.jpg" alt="pica3" width="400" height="300">
+            <span>Price: 12$</span>
+            <button class="btn btn-danger"><a href="/order" style="text-decoration: none; color: white; font-weight: bold">Order Now</a></button>
+        </div>
+
     </div>
 
 </div>

@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza</title>
+    <title>Order Pizza</title>
     <link href="${pageContext.request.contextPath}/css/userstyle.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -27,6 +27,9 @@
         </form>
     </div>
     <div class="order">
+        <p>You say I am hungry, I say order pizza!</p>
+        <h3>Choose your favorite Pizza</h3>
+        <hr>
         <form:form  modelAttribute="order" action="/order" method="post">
         <div class="form-row">
             <div class="form-group col-md-6">
@@ -58,8 +61,9 @@
             <form:label path="note">Note</form:label>
             <form:textarea type="text" class="form-control" path="note" placeholder="With peperoni, patate, tomate"/>
         </div>
+            <br>
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-            <button type="submit" class="btn btn-danger">Order Pizza</button>
+            <button type="submit" class="btn btn-danger" style="padding: 10px">Order Pizza</button>
         </form:form>
 
     </div>

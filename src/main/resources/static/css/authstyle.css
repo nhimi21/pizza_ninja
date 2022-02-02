@@ -18,7 +18,7 @@
     .col-12 {width: 100%;}
 }
 body{
-    background-color: #c3c7c7;
+    background: linear-gradient(#e7e5e4, #7da6c0);
 }
 .nav {
     width: 100%;

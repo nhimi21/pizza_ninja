@@ -3,7 +3,7 @@
     width: 100%;
 }
 body{
-    background-color: #e7e5e4;
+    background: linear-gradient(#e7e5e4, #7da6c0);
 }
 .nav{
     width: 100%;
