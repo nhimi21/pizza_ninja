@@ -40,4 +40,11 @@ public class OrderController {
            return "redirect:/";
        }
    }
+   @GetMapping("/admin")
+    public String adminHome(Model model,Principal principal){
+       String username = principal.getName();
+       model.addAttribute("currentUser", userService.findByUsername(username));
+       model.addAttribute("orders",this.orderService.findAllOrders());
+       return "/admin/homeAdmin";
+   }
 }
