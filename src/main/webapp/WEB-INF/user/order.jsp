@@ -61,9 +61,8 @@
             <form:label path="note">Note</form:label>
             <form:textarea type="text" class="form-control" path="note" placeholder="With peperoni, patate, tomate"/>
         </div>
-            <br>
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-            <button type="submit" class="btn btn-danger" style="padding: 10px">Order Pizza</button>
+            <button type="submit" class="btn btn-danger">Order Pizza</button>
         </form:form>
 
     </div>

@@ -58,6 +58,11 @@ body{
 .box-cont span,button{
     margin: 15px 23px;
 }
+.order form .btn{
+    margin-top: 20px;
+    padding: 7px;
+    width: 15%
+}
 .box-cont h2{
     color: #17860b;
     font-family: "Brush Script MT", serif;
@@ -65,12 +70,8 @@ body{
     padding: 5px;
 }
 .img-box img{
-    border: 1px solid white;
-}
-.img-box img:hover{
     border: 1px solid black;
 }
-
 .hed h1{
     padding: 20px;
     text-align: center;
